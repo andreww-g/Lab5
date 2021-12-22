@@ -45,10 +45,10 @@ public class App extends JFrame {
     public App() {
         this.setTitle("Figures");
         ImageIcon image = new ImageIcon("smile.png");
-        this.setIconImage(image.getImage());
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         Dimension screen = Toolkit.getDefaultToolkit().getScreenSize();
         setResizable(false);
+        this.setIconImage(image.getImage());
         int ww = 470, wh = 310;
 
         setBounds((screen.width-ww)/2, (screen.height-wh)/2, ww, wh);
